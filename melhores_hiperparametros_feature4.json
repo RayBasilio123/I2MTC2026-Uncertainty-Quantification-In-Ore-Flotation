@@ -1,0 +1,73 @@
+{
+  "RF": {
+    "n_estimators": 256,
+    "max_depth": 14,
+    "min_samples_split": 3,
+    "min_samples_leaf": 3,
+    "max_features": "sqrt",
+    "bootstrap": false
+  },
+  "DT": {
+    "max_depth": 6,
+    "min_samples_split": 2,
+    "min_samples_leaf": 10,
+    "max_features": "log2",
+    "criterion": "squared_error",
+    "splitter": "best"
+  },
+  "ADA": {
+    "n_estimators": 292,
+    "learning_rate": 0.023426956744211403,
+    "loss": "linear",
+    "estimator__max_depth": 6,
+    "estimator__min_samples_leaf": 1
+  },
+  "GB": {
+    "n_estimators": 1843,
+    "learning_rate": 0.013423354187515103,
+    "subsample": 0.8271716407842071,
+    "max_depth": 8,
+    "min_samples_split": 16,
+    "min_samples_leaf": 13,
+    "max_features": "log2",
+    "loss": "huber"
+  },
+  "XGB": {
+    "n_estimators": 1723,
+    "learning_rate": 0.037956993618682176,
+    "max_depth": 7,
+    "subsample": 0.7836258304564441,
+    "colsample_bytree": 0.9491409614285389,
+    "min_child_weight": 3.7584550421359695,
+    "reg_lambda": 15.78535411656014,
+    "reg_alpha": 2.267819381076329,
+    "gamma": 0.3719023165905777,
+    "tree_method": "hist",
+    "eval_metric": "rmse"
+  },
+  "LGBM": {
+    "n_estimators": 757,
+    "learning_rate": 0.04661822366935736,
+    "num_leaves": 64,
+    "max_depth": 17,
+    "min_data_in_leaf": 34,
+    "subsample": 0.7993812440061141,
+    "colsample_bytree": 0.5835679603506339,
+    "reg_lambda": 6.452137212819327,
+    "reg_alpha": 3.1621043255047487
+  },
+  "MLP": {
+    "hidden_layer_sizes": [
+      128,
+      64
+    ],
+    "activation": "tanh",
+    "alpha": 0.004901395328332956,
+    "learning_rate_init": 0.0022046728142910647,
+    "learning_rate": "adaptive",
+    "early_stopping": true,
+    "max_iter": 2000,
+    "validation_fraction": 0.15,
+    "n_iter_no_change": 30
+  }
+}

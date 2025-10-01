@@ -1,0 +1,5 @@
+# Virtual environment
+.venv/
+
+# Metrics files
+all_metrics_m*
